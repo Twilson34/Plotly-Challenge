@@ -68,6 +68,13 @@ function metaData(sampleId) {
     });
 }
 
+
+//function for optionChanged
+function optionChanged(newSampleId) {
+    Charts(newSampleId);
+    metaData(newSampleId);
+}
+
 //init function, starting on first patient option. 
 function init() {
     var selector = d3.select("#selDataset");
